@@ -5,7 +5,7 @@ Console.Write("Введите число B: "); int B = int.Parse(Console.ReadLi
 
 if (A>B) Console.Write($"{A}"+" больше чем "+$"{B}");
 
-else Console.Write($"{B}"+" больше чем "+$"{A}");
+else Console.WriteLine($"{B}"+" больше чем "+$"{A}");
 
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -26,4 +26,13 @@ if (E > max) max = E;
 count++;
 };
 
-Console.Write("Наибольшее - "+$"{max}");
+Console.WriteLine("Наибольшее - "+$"{max}");
+
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка(number%2==0)).
+
+Console.Write("Введите число: "); int F = int.Parse(Console.ReadLine()!);
+
+if (F%2 == 0) Console.Write($"{F}"+" - четное");
+
+else Console.WriteLine($"{F}"+" - нечетное");
