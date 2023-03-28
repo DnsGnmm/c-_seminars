@@ -1,4 +1,5 @@
 ﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+
 Console.Write("Введите число A: "); int A = int.Parse(Console.ReadLine()!); 
 
 Console.Write("Введите число B: "); int B = int.Parse(Console.ReadLine()!);
@@ -36,3 +37,16 @@ Console.Write("Введите число: "); int F = int.Parse(Console.ReadLine
 if (F%2 == 0) Console.Write($"{F}"+" - четное");
 
 else Console.WriteLine($"{F}"+" - нечетное");
+
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Введите число: "); int N = int.Parse(Console.ReadLine()!);
+
+int count2 = 2;
+
+while (count2 < N)
+{
+    if (count2%2 == 0) Console.Write($"{count2}"+", ");
+    count2 ++;
+};
